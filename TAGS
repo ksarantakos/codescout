@@ -1,0 +1,16 @@
+
+app/controllers/application_controller.rb,79
+class ApplicationController < ActionController::BaseApplicationController1,0
+
+app/controllers/home_controller.rb,87
+class HomeController < ApplicationControllerHomeController1,0
+  def indexindex2,45
+
+app/helpers/application_helper.rb,47
+module ApplicationHelperApplicationHelper1,0
+
+app/helpers/home_helper.rb,33
+module HomeHelperHomeHelper1,0
+
+app/models/user.rb,39
+class User < Omnisocial::UserUser1,0

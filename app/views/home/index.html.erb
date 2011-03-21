@@ -1,0 +1,10 @@
+
+<h1>Welcome to CodeScout</h1> 
+<p>
+<% if current_user %>
+  Welcome <%= current_user.name %>!
+  <%= link_to 'logout here', :logout %>
+<% else %>
+  <%= link_to 'login here', :login %>
+<% end %>
+</p>

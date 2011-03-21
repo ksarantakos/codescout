@@ -1,0 +1,17 @@
+Omnisocial.setup do |config|
+  
+  # ==> Twitter
+  # config.twitter 'APP_KEY', 'APP_SECRET'
+  
+  # ==> Facebook
+  # config.facebook 'APP_KEY', 'APP_SECRET', :scope => 'publish_stream'
+  
+  if Rails.env.production?
+    config.twitter 'xJT5vxxomjA9jDIRpd79kQ', 'SM7jtX4mAxaFGJcc75k3Iw0Oeplf9FRTVCsFALIzvqI'
+    config.facebook '191544134215981', '5cc26671d1c3abb94038283659ea97ce', scope => 'publish_stream'
+  elsif Rails.env.development?
+    config.twitter 'xJT5vxxomjA9jDIRpd79kQ', 'SM7jtX4mAxaFGJcc75k3Iw0Oeplf9FRTVCsFALIzvqI'
+    config.facebook '191544134215981', '5cc26671d1c3abb94038283659ea97ce', scope => 'publish_stream'
+  end
+  
+end
