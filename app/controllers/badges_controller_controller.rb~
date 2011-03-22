@@ -1,0 +1,5 @@
+class BadgesControllerController < ApplicationController
+  def show
+  end
+
+end

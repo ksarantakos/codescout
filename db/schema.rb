@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110320202337) do
+ActiveRecord::Schema.define(:version => 20110322043833) do
+
+  create_table "badges", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "icon_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "login_accounts", :force => true do |t|
     t.string   "type"

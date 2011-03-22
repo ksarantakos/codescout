@@ -1,4 +1,6 @@
 Codescout::Application.routes.draw do
+  resources :badges
+
   get "home/index"
 
   root :to => "home#index"
